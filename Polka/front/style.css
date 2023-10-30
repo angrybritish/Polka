@@ -1,0 +1,155 @@
+*{
+  font-family: 'Comfortaa', sans-serif;
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: #d49953;
+}
+body
+{
+  background: #f2e3d0;
+}
+a
+{
+  text-decoration: none;
+  color: #d49953;
+}
+/* HEADER */
+header
+{
+  background: #402504;
+  height: 50px;
+  top: 432px;
+}
+header
+*{
+    color: #d49953;
+}
+header ul
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+}
+header ul li
+{
+  float: left;
+  position: relative;
+}
+header ul li a
+{
+  display: block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px;
+
+}
+header ul li a:hover
+{
+  background: #2e1b04;
+  transition: 0,5s;
+  color: #d49953;
+}
+header ul li ul
+{
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  left: 3px;
+  width: 180px;
+  display: none;
+  z-index: 111;
+}
+header ul li:hover ul
+{
+  display: block;
+}
+header ul li ul li
+{
+  width: 65%;
+}
+header ul li ul li a
+{
+  padding: 10px;
+  background: #f2e3d0;
+  color: #d49953;
+}
+/* FORMS*/
+.reg_form button
+{
+    background: #d1c4b4;
+    border-color: #402504;
+    color:#402504;
+}
+.reg_form button:hover
+{
+    background: #a69c90;
+    border-color: #402504;
+    color:#402504;
+}
+.reg_form h2
+{
+    text-align:center;
+    margin:30px;
+    color:#402504;
+}
+.reg_form a
+{
+    font-size: 1.2em;
+    transition: all .3s;
+    text-decoration: none;
+    color:#d49953;
+    margin-left: 10px;
+}
+.reg_form a:hover
+{
+    margin-left:20px;
+    color:#402504;
+    transition: all .3s;
+}
+.reg_form label
+{
+    color:#402504;
+}
+.reg_form2 button
+{
+    background: #d1c4b4;
+    border-color: #402504;
+    color:#402504;
+}
+.reg_form2 button:hover
+{
+    background: #a69c90;
+    border-color: #402504;
+    color:#402504;
+}
+.reg_form2 h2
+{
+    text-align:center;
+    margin:50px;
+    color:#402504;
+}
+.reg_form2 a
+{
+    font-size: 1.2em;
+    transition: all .1s;
+    text-decoration: none;
+    color:#d49953;
+    //margin-left: 10px;
+}
+.reg_form2 a:hover
+{
+    margin-left:10px;
+    color:#402504;
+    transition: all .3s;
+}
+.reg_form2 label
+{
+    color:#402504;
+}
