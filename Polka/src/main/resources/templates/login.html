@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>Polka</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
             </div>
             <nav class="col-8">
                 <ul>
-                    <li><a href="nonauto.html"><i class="fa-solid fa-house fa-sm" style="color: #d49953;"></i> Home</a> </li>
+                    <li><a href="/"><i class="fa-solid fa-house fa-sm" style="color: #d49953;"></i> Home</a> </li>
                 </ul>
             </nav>
         </div>
@@ -32,24 +32,25 @@
 
 <!-FORM-->
 <div class = "container reg_form2" id = "form2">
-    <form class="row justify-content-center" method="post" action="login.html">
-        <h2>Log In</h2>
+    <div class="row justify-content-center">
+        <h2 id="echo">Log In</h2>
         <div class="mb-3 col-12 col-md-4">
-            <p for="InputUserName" class="form-label">User name</p>
-            <input type="user-name" class="form-control" name="InputUserName">
+            <p for="InputUserName" class="form-label">Email</p>
+            <input type="user-name" id="mail" class="form-control" name="InputUserName">
         </div>
         <div class ="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
             <p for="InputPassword1" class="form-label">Password</p>
-            <input type="password" class="form-control" name="InputPassword1">
+            <input type="password" id="pass" class="form-control" name="InputPassword1">
         </div>
         <div class ="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
-            <button type="login " class="btn btn-warning">Log in</button>
-            <a href="reg.html">Registration</a>
+            <button type="login " class="btn btn-warning" id="InputSubmit">Log in</button>
+            <a href="register">Registration</a>
         </div>
-    </form>
+    </div>
 </div>
 </body>
-<script src="script_log.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/log.js"></script>
 </html>

@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ed59af65c4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <title>Polka</title>
 </head>
 <body>
@@ -21,17 +21,24 @@
                 </h1>
             </div>
             <nav class="col-8">
+                <form action="/search" method="get">
+                    <input type="text" name="query" placeholder="Enter book">
+                    <select name="option">
+                        <option selected value="0">Все жанры</option>
+                        <option value="1">Ужасы</option>
+                        <option value="2">Мистика</option>
+                        <option value="3">Фантастика</option>
+                        <option value="4">Классика</option>
+                    </select>
+                    <button type="search">Search</button>
+                </form>
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-house fa-sm" style="color: #d49953;"></i> Home</a> </li>
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-user fa-sm" style="color: #d49953;"></i>
                             Cabinet
                         </a>
-                        <ul>
-                            <li><a href="#">Profile</a> </li>
-                            <li><a href="#">My polka</a> </li>
-                            <li><a href="#">Exit</a> </li>
+                        <ul th:utext="${menu}">
                         </ul>
                     </li>
                 </ul>
@@ -39,5 +46,12 @@
         </div>
     </div>
 </header>
+
+<span th:utext="${body}"></span>
+
 </body>
+<script src="../js/jquery.js"></script>
+<script src="../js/lk.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>Polka</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
             </div>
             <nav class="col-8">
                 <ul>
-                    <li><a href="nonauto.html"><i class="fa-solid fa-house fa-sm" style="color: #d49953;"></i> Home</a> </li>
+                    <li><a href="/"><i class="fa-solid fa-house fa-sm" style="color: #d49953;"></i> Home</a> </li>
                 </ul>
             </nav>
         </div>
@@ -31,30 +31,47 @@
 <!--END HEADER-->
 
 <div class = "container reg_form">
-    <form class="row justify-content-center" method="post" action="reg.html" id="form">
-        <h2>Registration</h2>
+    <div class="row justify-content-center">
+        <h2 id="echo">Registration</h2>
         <div class="mb-3 col-12 col-md-4">
             <p for="InputUserName" class="form-label">User name</p>
-            <input type="user-name" class="form-control"  name="InputUserName">
+            <input type="user-name" id="username" class="form-control"  name="InputUserName">
         </div>
         <div class ="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
             <p for="InputEmail1" class="form-label">Email address</p>
-            <input type="email" class="form-control"  name="InputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control"  id="mail" name="InputEmail1" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class ="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
             <p for="InputPassword1" class="form-label">Password</p>
-            <input type="password" class="form-control"  name="InputPassword1">
+            <input type="password" id="pass" class="form-control"  name="InputPassword1">
         </div>
         <div class ="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
-            <button type="submit " class="btn btn-warning" id="InputSubmit">Submit</button>
-            <a href="login.html">Log in</a>
+        <label class="form-label">Выберите тип аккаунта:</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioUser" checked value="reader">
+            <label class="form-check-label" for="flexRadioUser">
+                Читатель
+            </label>
         </div>
-    </form>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioCreator" value="writer">
+            <label class="form-check-label" for="flexRadioCreator">
+                Писатель
+            </label>
+        </div>
+        </div>
+        <div class ="w-100"></div>
+        <div class="mb-3 col-12 col-md-4">
+            <button type="submit " class="btn btn-warning" id="InputSubmit">Registration</button>
+            <a href="login">Log in</a>
+        </div>
+    </div>
 </div>
 </body>
-<script src="script_reg.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/reg.js"></script>
 </html>
